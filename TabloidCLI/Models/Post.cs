@@ -13,12 +13,9 @@ namespace TabloidCLI.Models
         public Author Author { get; set; }
         public Blog Blog { get; set; }
         public List<Tag> tags { get; set; } = new List<Tag>();
-      
-
-
         public override string ToString()
         {
-            return $@"    {Id}) {Title} | {Url}  | {PublishDateTime} )";
+            return $@"   {Id}) {Title} | {Url}  | {PublishDateTime} )";
         }
     }
 }
