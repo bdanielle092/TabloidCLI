@@ -133,6 +133,7 @@ namespace TabloidCLI.Repositories
             using (SqlConnection conn = Connection)
             {
                 conn.Open();
+
                 using(SqlCommand cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"DELETE FROM Blog WHERE id = @id";
